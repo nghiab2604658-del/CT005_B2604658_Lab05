@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Infographic và video tham khảo cho bài thực hành Lab 05.">
+	<title>Infographic - Lab 05</title>
+	<style>
+		:root {
+			font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+			color: #1e293b;
+			background: #f1f5f9;
+			font-synthesis: none;
+		}
+		* { box-sizing: border-box; }
+		body { margin: 0; padding: 36px 16px; line-height: 1.6; }
+		main { width: min(100%, 900px); margin: 0 auto; }
+		header { text-align: center; margin: 0 auto 28px; }
+		.label { color: #2563eb; font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+		h1 { margin: 8px 0; font-size: clamp(1.8rem, 5vw, 2.7rem); line-height: 1.2; }
+		header p:last-child { max-width: 620px; margin: 12px auto 0; color: #64748b; }
+		section { margin: 20px 0; padding: clamp(18px, 4vw, 30px); background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; box-shadow: 0 8px 24px rgb(15 23 42 / 5%); }
+		h2 { margin: 0 0 16px; font-size: 1.25rem; }
+		.infographic { display: block; width: 100%; height: auto; border-radius: 10px; }
+		.video { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; background: #e2e8f0; }
+		.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+		footer { padding-top: 8px; color: #64748b; font-size: .88rem; text-align: center; }
+		@media (max-width: 520px) { body { padding: 24px 14px; } section { border-radius: 12px; } }
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<p class="label">Lab 05 · Bài tập 3.1</p>
+			<h1>Infographic: Khám phá nội dung bài học</h1>
+			<p>Hình ảnh dưới đây tóm tắt nội dung chính của bài thực hành. Xem thêm video tham khảo để tìm hiểu chủ đề.</p>
+		</header>
+
+		<section aria-labelledby="image-heading">
+			<h2 id="image-heading">Infographic</h2>
+			<img class="infographic" src="Lab05_Ex2.1.png" alt="Infographic minh họa nội dung Lab 05" loading="lazy">
+		</section>
+
+		<section aria-labelledby="video-heading">
+			<h2 id="video-heading">Video tham khảo</h2>
+			<div class="video">
+				<iframe src="https://www.youtube.com/embed/9RQ7eBOC1Tw" title="Video tham khảo trên YouTube" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+		</section>
+
+		<footer>© 2025 Lab 05. Infographic thuộc quyền sở hữu của tác giả; video được nhúng từ YouTube.</footer>
+	</main>
+</body>
+</html>
